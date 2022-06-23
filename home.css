@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+/* Header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e3e3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6);
+    position: sticky ;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+   position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;   
+    transition:  0.3s ease;
+}
+
+#navbar li a:hover{
+    
+    color: #056687;
+    transition: transform 0.25s ease-out ;
+}
+#navbar li a:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    position: absolute;
+    left: 0px;
+    background: #056687;
+    animation: underlineit 0.3s ease-in-out ;
+    
+}
+
+@keyframes underlineit{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #20dbc2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: lightseagreen;
+}
+
+/* Main */
+
+
+#main{
+    background-image: url(image/mainbg.svg);
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    background-position: top 20% right 0 ;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+     
+}
+
+#hw{
+    color: orangered;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* food */
+
+#food{
+    padding: 40px 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* for resposnisve */
+
+}
+
+#food .foodi{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    margin: 15px 0px;
+}
+
+#food .foodi:hover {
+   box-shadow: 0 0 5px rgba(217, 232, 18, 1);
+}
+
+#food .foodi h5{
+    display: inline-block;
+    padding: 8px 8px 8px 8px;
+    line-height: 1;
+    border-radius: 3px;
+    color: #4fc555;
+    background-color: #ffc47d;
+}
+#food .foodi #f1{
+    height: 80%;
+    width: 100%;
+    margin-bottom: 10px ;
+}
+
+/* Meals */
+
+#meals{
+    
+    text-align: center;
+    padding: 40px 80px;
+    background-color: #e7e7e7;
+}
+
+#meals .meal-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+#meals .meal{
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5%;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    margin: 2% 0;
+    transition: 0.2s ease;
+}
+
+#meals .meal:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    width:41%;
+}
+
+#meals .meal img{
+    width: 100%;
+    border-radius: 5%;
+}
+#meals .meal img:hover{
+    width: 101%;
+    border-radius: 5%;
+}
+/* Tips */
+
+/* .slider-box{
+    width:90% ;
+    height: 90vh;
+    margin: 20px auto;
+    position: relative;
+}
+
+#slider{
+    width: 100%;
+    display: inline-flex;
+}
+
+#slider img{
+    width: 100%;
+}
+
+.indicators{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.indicators span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(217, 232, 250, 0.5);
+    cursor: pointer;
+}
+
+#tips1{
+    width:90% ;
+    height: 90vh;
+    margin: 20px auto;
+    position: relative;
+    
+}
+
+
+.tips{
+    width: 100%;
+    display: inline-flex;
+}
+
+.tips img{
+    width: 60%;
+} */
