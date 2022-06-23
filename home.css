@@ -170,23 +170,20 @@ button:hover{
     border-radius: 5%;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
-    margin: 2% 0;
+    margin: 10px 0;
     transition: 0.2s ease;
 }
 
 #meals .meal:hover{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
-    width:21%;
+    transform: scale(1.2);
 }
 
 #meals .meal img{
     width: 100%;
     border-radius: 5%;
 }
-#meals .meal img:hover{
-    width: 101%;
-    border-radius: 5%;
-}
+
 /* Tips */
 
 /* .slider-box{
