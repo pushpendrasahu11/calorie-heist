@@ -106,6 +106,53 @@ button:hover{
     text-shadow: 2px 2px 2px rgba(42, 224, 231, 0.3);
 }
 #def{
+    margin-top: 10px;
     width: 40%;
     min-width: 400px;
+}
+
+.calculator{
+    border: 1px solid #e3e3e3;
+    border-radius: 5%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0px;
+    background-color: #fafafa;
+}
+
+.input label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.input input{
+    border: none;
+    outline: none;
+    /* likhte time jo box bnta hai i.e. outline */
+    border-bottom: 1px solid #0334e2;
+    width: 60%;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fafafa;
+}
+
+button#calculate{
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #9cff4c;
+    color: #0334e2;
+    transition: 0.2s ease;
+    margin: 15px 0px;
+}
+
+button#calculate:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgb(129, 236, 253);
 }
