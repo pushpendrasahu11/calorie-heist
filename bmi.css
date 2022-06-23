@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Stoke:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+/* Header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e3e3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6);
+    position: sticky ;
+    top: 0;
+    left: 0;
+    height: 76px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+   position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;   
+    transition:  0.3s ease;
+}
+
+#navbar li a:hover{
+    
+    color: #056687;
+    transition: transform 0.25s ease-out ;
+}
+#navbar li a:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    position: absolute;
+    left: 0px;
+    background: #056687;
+    animation: underlineit 0.3s ease-in-out ;
+    
+}
+
+@keyframes underlineit{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #20dbc2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: lightseagreen;
+}
+
+/* Main */
+
+#main{
+    background-image: url(image/bmi/bmiright.svg);
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    background-position: top 20% right 10% ;
+    padding:  40px 60px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+#main #title{
+    font-size: 3rem;
+    font-family: 'Stoke', serif;
+    color:#0334e2;
+    text-shadow: 2px 2px 2px rgba(42, 224, 231, 0.3);
+}
+#def{
+    width: 40%;
+    min-width: 400px;
+}

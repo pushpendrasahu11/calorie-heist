@@ -171,12 +171,12 @@ button:hover{
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
     margin: 10px 0;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 #meals .meal:hover{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #meals .meal img{
