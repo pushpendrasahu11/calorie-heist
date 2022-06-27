@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="signin.css">
+    <title>Signin</title>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img id="logo" src="image/logo2.svg" alt="" class="logo"></a>
+        <div>
+            <ul id="navbar"> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Food Items</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><button><i class="bi bi-door-open-fill"></i>New user/ sign in</button></li>
+                <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
+            </ul>
+        </div>
+        <div id="small">
+            <i id="ham" class="bi bi-list"></i>
+        </div>
+        
+    </section>
+
+    <section class="signin-signup">
+        <div class="container">
+            <input type="checkbox" name="" id="change">
+            <div class="cover"></div>
+            <form action="#">
+
+                <div class="signin-form">
+                    <label class="title" for="signin">Sign in</label>
+                    <div class="content">
+                        <div class="input">
+                            <i class="bi bi-envelope"></i>
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" placeholder="Enter your password">
+                        </div>
+                        <div class="text">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="submitbtn input">
+                            <input type="button" value="Submit">
+                        </div>
+                        <div class="text">Don't have an account? <label for="change">Sign up now</label></div>
+                    </div>
+                </div>
+
+                <div class="signup-form">
+                    <label class="title" for="signup">Sign up</label>
+                    <div class="content">
+                        <div class="input">
+                            <i class="bi bi-person"></i>
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input">
+                            <i class="bi bi-envelope"></i>
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" placeholder="Create a password">
+                        </div>
+                        <div class="input">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" placeholder="Confirm your password">
+                        </div>
+                        <div class="submitbtn input">
+                            <input type="button" value="Submit">
+                        </div>
+                        <div class="text">Already have an account? <label for="change">Sign in now</label></div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <script src="signin.js"></script>
+</body>
+
+</html>
