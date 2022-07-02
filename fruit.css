@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Stoke:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat&display=swap');
 
 *{
     margin: 0;
@@ -24,6 +24,7 @@ body{
     top: 0;
     left: 0;
     height: 76px;
+    z-index: 3;
 }
 
 #navbar{
@@ -74,88 +75,108 @@ body{
 }
 
 button {
-    padding: 9px 25px;
-    background-color: #20dbc2;
+    padding: 5px 15px;
+    /* background-color: #20dbc2; */
     border: none;
-    border-radius: 50px;
+    font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
     
 }
 button:hover{
-    background-color: lightseagreen;
+    background-color: rgb(159, 211, 209);
 }
 
-/* Main */
+#content{ 
+    padding: 20px 30px;
+}
 
-#main{
-    background-image: url(image/bmi/bmiright.svg);
-    background-repeat: no-repeat;
-    height: 80vh;
-    width: 100%;
-    background-position: top 20% right 10% ;
-    padding:  40px 60px 20px 40px;
+#content .container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    flex-wrap: wrap;
 }
-
-#main #title{
-    font-size: 3rem;
-    font-family: 'Stoke', serif;
-    color:#0334e2;
-    text-shadow: 2px 2px 2px rgba(42, 224, 231, 0.3);
-}
-#def{
-    margin-top: 10px;
-    width: 40%;
-    min-width: 400px;
-}
-
-.calculator{
-    border: 1px solid #e3e3e3;
+#content .fruit-container .fruit{
+    text-align: center;
+    width: 95%;
+    min-width: 250px;
+    padding: 10px 12px;
+    /* border: 1px solid #e3e3e3; */
     border-radius: 5%;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    
+    /* box-shadow: 20px 20px 30px rgba(0,0,0,0.06); */
+   
+    /* border: 2px solid black; */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: 0.3s ease;
+}
+
+#content .fruit-container{
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-row-gap: 1rem;
+    align-items: center;
+    width: 100%;
     min-width: 400px;
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px 0px;
-    background-color: #fafafa;
+    background-color: #baf8c4;
+    /* border: 1px solid #b31e1e; */
+    border-radius: 15px;
+    margin: 20px 0px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
 }
 
-.input label{
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 15px;
+
+#content .fruit-container .fruit h4{
+    font-size: x-large;
+}
+#content .fruit-container .more-text{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-right: 2%;
+    font-size: 18px;
+    line-height: 1.2;
+    position: relative;
+    /* border: 2px solid black; */
+
+    
+}
+.fruit-container .text-box{
+    /* border: 2px solid brown; */
+    font-size: 18px;
+    position: relative;
+    top: 10%;
 }
 
-.input input{
-    border: none;
-    outline: none;
-    /* likhte time jo box bnta hai i.e. outline */
-    border-bottom: 1px solid #0334e2;
-    width: 60%;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.4rem;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #fafafa;
+.fruit-container .text-box ul{
+    list-style-position: inside;
 }
 
-button#calculate{
-    padding: 5px 15px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: #9cff4c;
-    color: #0334e2;
-    transition: 0.2s ease;
-    margin: 15px 0px;
+.fruit-container .text-box ul h3{
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+/* .fruit-container .more-text{
+    background-color: yellow;
+    clear: left;
+    width: 90%;
+} */
+
+/* #content .fruit:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+} */
+
+#content .fruit img{
+    width: 100%;
+    border-radius: 5%;
 }
 
-button#calculate:hover{
-    transform: scale(1.05);
-    box-shadow: 1px 1px 10px rgb(129, 236, 253);
-}
 
 /* Responsive */
 
@@ -169,7 +190,7 @@ button#calculate:hover{
     #header {
         z-index: 1;
     }
-
+    
     #header #small{
         display:flex;
         position: relative;
@@ -217,4 +238,4 @@ button#calculate:hover{
     #ham.active{
         visibility: hidden;
     }
-}    
+}

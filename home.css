@@ -100,7 +100,19 @@ button:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    transition: all 0.5s ease;
      
+}
+
+#main button{
+    color: orangered;
+    font-size: 1.5rem;
+    background-color: #97fdea;
+    font-weight: 600;
+}
+
+#main button:hover{
+    background-color: #c3fff4;
 }
 
 #hw{
@@ -184,6 +196,83 @@ button:hover{
 #meals .meal img{
     width: 100%;
     border-radius: 5%;
+}
+
+/* Responsive */
+
+#header #small,
+#header #close{
+   display: none;
+}
+
+@media(max-width: 821px){
+
+    #header {
+        z-index: 1;
+    }
+
+    #main{
+        /* background-image: url(image/mainbg.svg);
+        background-repeat: no-repeat; */
+        background: none;
+        height: 40vh;
+        width: 100%;
+        background-position: top 20% right 0 ;
+        padding: 0 40px;
+        display: flex;
+        font-size: 1.2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;     
+    }
+   
+    #header #small{
+        display:flex;
+        position: relative;
+        top: 0;
+        right: -50px;
+        align-items: flex-end;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e3e3;
+        box-shadow: 0 30px 30px rgba(0,0,0,0.2);
+        padding: 80px 0 0 18px;
+        transition: all 0.3s ease;
+        z-index: 2;
+    }
+
+    #navbar li{
+        margin-bottom: 20px;
+    }
+
+
+    #header #close{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color:#000000;
+        cursor:default;
+  
+    }
+    
+    #navbar.active{
+        right:0px;
+    }
+
+    #ham.active{
+        visibility: hidden;
+    }
 }
 
 /* Tips */
