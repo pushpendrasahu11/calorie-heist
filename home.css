@@ -83,7 +83,11 @@ button {
     
 }
 button:hover{
-    background-color: rgb(159, 211, 209);
+    background-color: rgb(182, 248, 245);
+}
+
+#header button i{
+    color: #14ba01;
 }
 
 /* Main */
@@ -107,12 +111,12 @@ button:hover{
 #main button{
     color: orangered;
     font-size: 1.5rem;
-    background-color: #97fdea;
+    background-color: #5fe6cd;
     font-weight: 600;
 }
 
 #main button:hover{
-    background-color: #c3fff4;
+    background-color: #89ffe9;
 }
 
 #hw{

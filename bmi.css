@@ -74,15 +74,20 @@ body{
 }
 
 button {
-    padding: 9px 25px;
-    background-color: #20dbc2;
+    padding: 5px 15px;
+    /* background-color: #20dbc2; */
     border: none;
-    border-radius: 50px;
+    font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
     
 }
 button:hover{
-    background-color: lightseagreen;
+    background-color: rgb(182, 248, 245);
+}
+
+#header button i{
+    color: #14ba01;
 }
 
 /* Main */
@@ -141,6 +146,12 @@ button:hover{
     font-family: 'Times New Roman', Times, serif;
     background-color: #fafafa;
 }
+.input select{
+    position: absolute;
+    border: none;
+    background-color: #fafafa;
+    padding: 2px 0px 2px 0px;
+}
 
 button#calculate{
     padding: 5px 15px;
@@ -157,6 +168,10 @@ button#calculate:hover{
     box-shadow: 1px 1px 10px rgb(129, 236, 253);
 }
 
+.result #status{
+    font-weight: 1000;
+    color: #0334e2;
+}
 /* Responsive */
 
 #header #small,

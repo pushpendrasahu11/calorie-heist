@@ -37,18 +37,26 @@
             <div class="content">
                 <div class="input">
                     <label for="height">Height</label>
-                    <input type="number" id="height">
+                    <input type="number" min="0" id="height" >
+                    <select name="" id="selecth">
+                        <option value="">cm</option>
+                        <option value="">feet</option>
+                    </select>
                 </div>
                 <div class="input">
                     <label for="weight">Weight</label>
-                    <input type="number" id="weight">
+                    <input type="number" min="0" id="weight" >
+                    <select name="" id="selectw">
+                        <option value="">kg</option>
+                        <option value="">pounds</option>
+                    </select>
                 </div>
-                <button id="calculate">Calculate BMI</button>
+                <button onclick="calculateBmi()" id="calculate">Calculate BMI</button>
             </div>
             <div class="result">
-                <h3>Your BMI is </h3>
-                <div id="ans">0</div>
-                <p class="status"></p>
+                
+                <div id="ans"></div>
+                <p id="status"></p>
             </div>
         </div>
     </section>
