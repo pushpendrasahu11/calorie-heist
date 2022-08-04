@@ -1,6 +1,8 @@
 <a href="https://storyset.com/phone">Phone illustrations by Storyset</a>
 https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html
 <a href='https://www.freepik.com/vectors/banana'>Banana vector created by macrovector - www.freepik.com</a>
+<a href='https://www.freepik.com/vectors/pomegranate-seeds'>Pomegranate seeds vector created by macrovector - www.freepik.com</a>
+<a href='https://www.freepik.com/vectors/pineapple'>Pineapple vector created by macrovector - www.freepik.com</a>
 
 
 
@@ -8,3 +10,14 @@ source
 https://www.healthifyme.com/blog/banana-nutrition/
 https://www.healthline.com/nutrition/foods/bananas#nutrition
 https://www.verywellfit.com/apples-nutrition-facts-calories-and-their-health-benefits-4117992
+
+//
+ghee
+curd
+panner
+milk : cashew, almond
+cheese
+butter
+cream
+khoya
+lassi
