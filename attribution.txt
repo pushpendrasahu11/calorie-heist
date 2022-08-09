@@ -3,13 +3,17 @@ https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html
 <a href='https://www.freepik.com/vectors/banana'>Banana vector created by macrovector - www.freepik.com</a>
 <a href='https://www.freepik.com/vectors/pomegranate-seeds'>Pomegranate seeds vector created by macrovector - www.freepik.com</a>
 <a href='https://www.freepik.com/vectors/pineapple'>Pineapple vector created by macrovector - www.freepik.com</a>
-
-
+<a href="https://iconscout.com/icons/gmail" target="_blank">Gmail Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
+<a href="https://iconscout.com/icons/google" target="_blank">Google Icon</a> by <a href="https://iconscout.com/contributors/font-awesome">Font Awesome</a> on <a href="https://iconscout.com">IconScout</a>
+<a href="https://iconscout.com/icons/linkedin" target="_blank">Linkedin Icon</a> by <a href="https://iconscout.com/contributors/silviu.ojog">Silviu Ojog</a> on <a href="https://iconscout.com">IconScout</a>
+<a href="https://iconscout.com/icons/google" target="_blank">Google Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">IconScout</a>
+<a href="https://iconscout.com/icons/whatsapp" target="_blank">Whatsapp Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
 
 source
 https://www.healthifyme.com/blog/banana-nutrition/
 https://www.healthline.com/nutrition/foods/bananas#nutrition
 https://www.verywellfit.com/apples-nutrition-facts-calories-and-their-health-benefits-4117992
+
 
 //
 ghee
