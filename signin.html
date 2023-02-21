@@ -34,7 +34,9 @@
     <section class="signin-signup">
         <div class="container">
             <input type="checkbox" name="" id="change">
+            <!-- if checkbox is is checked than go to register/sign up form -->
             <div class="cover"></div>
+            <div class="forms">
             <form action="#">
 
                 <div class="signin-form">
@@ -51,13 +53,16 @@
                         <div class="text">
                             <a href="#">Forgot password?</a>
                         </div>
-                        <div class="submitbtn input">
-                            <input type="button" value="Submit">
+                        <div class="submitbtn">
+                            <button>submit</button>
                         </div>
                         <div class="text">Don't have an account? <label for="change">Sign up now</label></div>
+                        <!-- The for attribute of <label> must be equal to the id attribute of the related element to bind them together.
+                        A label can also be bound to an element by placing the element inside the <label> element.  -->
                     </div>
                 </div>
-
+            </form>   
+            <form action="#">
                 <div class="signup-form">
                     <label class="title" for="signup">Sign up</label>
                     <div class="content">
@@ -77,14 +82,15 @@
                             <i class="bi bi-lock"></i>
                             <input type="password" placeholder="Confirm your password">
                         </div>
-                        <div class="submitbtn input">
-                            <input type="button" value="Submit">
+                        <div class="submitbtn">
+                            <button>submit</button>
                         </div>
                         <div class="text">Already have an account? <label for="change">Sign in now</label></div>
                     </div>
                 </div>
 
             </form>
+        </div>
         </div>
     </section>
     <script src="signin.js"></script>

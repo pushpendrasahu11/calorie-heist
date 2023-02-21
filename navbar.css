@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script+Swash+Caps&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body{
+    width: 100%;
+    
+}
+
+/* Header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e3e3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6);
+    position: sticky ;
+    top: 0;
+    left: 0;
+    height: 76px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+   position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;   
+    transition:  0.3s ease;
+}
+
+#navbar li a:hover{
+    
+    color: #056687;
+    transition: transform 0.25s ease-out ;
+}
+#navbar li a:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    position: absolute;
+    left: 0px;
+    background: #056687;
+    animation: underlineit 0.3s ease-in-out ;
+    
+}
+
+@keyframes underlineit{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+button {
+    padding: 5px 15px;
+    /* background-color: #20dbc2; */
+    border: none;
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;  
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: rgb(182, 248, 245);
+}
+
+#header button i{
+    color: #14ba01;
+}
+
+
+/* Responsive */
+
+#header #small,
+#header #close{
+   display: none;
+}
+
+@media(max-width: 821px){
+
+    #header {
+        z-index: 1;
+    }
+   
+    #header #small{
+        display:flex;
+        position: relative;
+        top: 0;
+        right: -50px;
+        align-items: flex-end;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e3e3;
+        box-shadow: 0 30px 30px rgba(0,0,0,0.2);
+        padding: 80px 0 0 18px;
+        transition: all 0.3s ease;
+        z-index: 2;
+    }
+
+    #navbar li{
+        margin-bottom: 20px;
+    }
+
+
+    #header #close{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color:#000000;
+        cursor:default;
+  
+    }
+    
+    #navbar.active{
+        right:0px;
+    }
+
+    #ham.active{
+        visibility: hidden;
+    }
+}
